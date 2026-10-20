@@ -41,9 +41,10 @@ Uno de los principales retos en la puesta en marcha de sistemas mecatrónicos co
 
 Como se puede apreciar en la ejecución del sistema, la coordinación temporal y espacial entre las trayectorias del manipulador robótico y los dispositivos auxiliares de la celda resulta indispensable para evitar interferencias mecánicas, optimizar los tiempos de ciclo y garantizar una operación continua, fluida y confiable en la línea de ensamble[cite: 2].
 
-<video src="https://github.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/blob/main/Multimedia/VID-20260824-WA0010.mp4" controls width="100%"></video>
+[▶ Ver video de validación dinámica](https://raw.githubusercontent.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/main/Multimedia/VID-20260824-WA0010.mp4)
+
 <div align="center">
-  <small><small>Ilustración 2 Validación dinámica y sincronización de ciclos en la celda de trabajo</small></small>
+  <small><small>Ilustración 2 Validación dinámica y sincronización de ciclos en la celda de trabajo[cite: 2]</small></small>
 </div><br>
 
 ---
@@ -61,16 +62,14 @@ A continuación se detalla el diagrama de cableado y conexiones eléctricas entr
 
 ## Instrucciones de uso
 
-1. **Requisitos previos:**
-   - Tener instalado **Arduino IDE**.
-   - Instalar la librería **AccelStepper** desde el gestor de librerías (`Sketch > Incluir librería > Administrar bibliotecas...`).
-2. **Conexiones:**
-   - Conectar los drivers **TB6560** a la placa **Arduino Mega 2560** respetando los pines definidos en el código (Step y Direction para cada eje) según el esquemático.
-   - Asegurar la alimentación externa adecuada para los motores NEMA 23 y NEMA 17.
-3. **Ejecución:**
-   - Cargar el sketch correspondiente en el Arduino Mega.
-   - Abrir el **Monitor Serie** configurado a **115200 baudios**.
-   - Enviar comandos mediante el cuadro de texto utilizando el formato `[Motor],[Pasos],[Velocidad]` (por ejemplo: `1,200,500`).
+1. **Configuración del sistema y envío de comandos:**
+   - Cargar el código correspondiente en la placa Arduino Mega 2560 utilizando el **Arduino IDE**.
+   - Abrir el **Monitor Serie** configurado a una velocidad de **115200 baudios**.
+   - El control de los ejes se realiza mediante comandos de texto en formato `[Motor],[Pasos],[Velocidad]` (por ejemplo: `1,200,500`), permitiendo definir de forma independiente el eje a accionar, la cantidad de pasos de desplazamiento y la velocidad de giro.
+
+2. **Consideración crítica para el Eje 2 (Hombro - Doble NEMA 23):**
+   - Dado que el hombro utiliza **dos motores NEMA 23** acoplados mecánicamente para traccionar en conjunto y soportar el esfuerzo de carga, es indispensable asegurar físicamente que ambos giren en **sentidos opuestos** (contrarios). 
+   - Debido a la disposición simétrica o de espejo en la que se montan mecánicamente ambos motores en la estructura, **se debe invertir físicamente la conexión de una de las fases (por ejemplo, intercambiando los cables A+ y A-) en los bornes del driver TB6560 de uno de los motores**. De esta manera, al recibir la misma señal de giro, los ejes mecánicos traccionarán de forma simétrica y colaborativa sin forzar ni bloquear la estructura.
 
 ## Tecnologías utilizadas
 - **Hardware:** Arduino Mega 2560, Drivers TB6560, Motores NEMA 23 y NEMA 17.
