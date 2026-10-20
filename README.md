@@ -11,6 +11,7 @@ El objetivo principal de esta etapa es realizar las pruebas operativas iniciales
 ## Índice
 - [Introducción / Objetivo](#introducción--objetivo)
 - [Descripción técnica y Hardware](#descripción-técnica-y-hardware)
+- [Desafíos técnicos: Sincronización y Operación Armónica](#desafíos-técnicos-sincronización-y-operación-armónica)
 - [Esquemático de Conexiones](#esquemático-de-conexiones)
 - [Instrucciones de uso](#instrucciones-de-uso)
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
@@ -34,13 +35,26 @@ El sistema de control y potencia está diseñado para gobernar un total de 5 eje
 
 ---
 
+## Desafíos técnicos: Sincronización y Operación Armónica
+
+Uno de los principales retos en la puesta en marcha de sistemas mecatrónicos complejos radica en lograr una sincronización precisa entre cada uno de los eslabones y los mecanismos asociados. El objetivo fundamental es asegurar una transición fluida que permita un ciclo de trabajo rítmico, coordinado y de carácter plenamente rutinario. 
+
+Como se puede apreciar en la ejecución del sistema, la coordinación temporal y espacial entre las trayectorias del manipulador robótico y los dispositivos auxiliares de la celda resulta indispensable para evitar interferencias mecánicas, optimizar los tiempos de ciclo y garantizar una operación continua, fluida y confiable en la línea de ensamble[cite: 2].
+
+<video src="assets/VID-20260824-WA0010.mp4" controls width="100%"></video>
+<div align="center">
+  <small><small>Ilustración 2 Validación dinámica y sincronización de ciclos en la celda de trabajo</small></small>
+</div><br>
+
+---
+
 ## Esquemático de Conexiones
 
 A continuación se detalla el diagrama de cableado y conexiones eléctricas entre la placa Arduino Mega 2560, los drivers TB6560 y los motores paso a paso del manipulador:
 
 ![Diagrama de Conexiones Arduino Mega y TB6560](https://github.com/user-attachments/assets/17008646115676987123)
 <div align="center">
-  <small><small>Ilustración 1 Diagrama de conexiones del sistema de control y potencia</small></small>
+  <small><small>Ilustración 3 Diagrama de conexiones del sistema de control y potencia</small></small>
 </div><br>
 
 ---
