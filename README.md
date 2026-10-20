@@ -41,7 +41,7 @@ Uno de los principales retos en la puesta en marcha de sistemas mecatrónicos co
 
 Como se puede apreciar en la ejecución del sistema, la coordinación temporal y espacial entre las trayectorias del manipulador robótico y los dispositivos auxiliares de la celda resulta indispensable para evitar interferencias mecánicas, optimizar los tiempos de ciclo y garantizar una operación continua, fluida y confiable en la línea de ensamble[cite: 2].
 
-<video src="assets/VID-20260824-WA0010.mp4" controls width="100%"></video>
+<video src="https://github.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/blob/main/Multimedia/VID-20260824-WA0010.mp4" controls width="100%"></video>
 <div align="center">
   <small><small>Ilustración 2 Validación dinámica y sincronización de ciclos en la celda de trabajo</small></small>
 </div><br>
