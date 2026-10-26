@@ -52,10 +52,9 @@ Como se puede apreciar en la ejecución del sistema, la coordinación temporal y
 
 ## Esquemático de Conexiones
 
-A continuación se detalla el diagrama de cableado y conexiones eléctricas entre la placa Arduino Mega 2560, los drivers TB6560 y los motores paso a paso del manipulador:
+A continuación se detalla el diagrama de cableado y conexiones eléctricas entre la placa Arduino Mega 2560, los drivers TB6600 y los motores paso a paso del manipulador:
 
-![Diagrama de Conexiones Arduino Mega y TB6560](https://github.com/user-attachments/assets/17008646115676987123)
-<div align="center">
+[Ver Diagrama de Conexiones - TB6600 (PDF)](https://github.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/blob/main/Multimedia/Robot_5GDL.pdf)
   <small><small>Ilustración 3 Diagrama de conexiones del sistema de control y potencia</small></small>
 </div><br>
 
