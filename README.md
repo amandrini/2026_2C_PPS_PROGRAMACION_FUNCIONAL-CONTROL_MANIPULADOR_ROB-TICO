@@ -25,7 +25,7 @@ El sistema de control y potencia está diseñado para gobernar un total de 5 eje
 
 ### Componentes Principales:
 1. **Unidad de Control:** Arduino Mega 2560.
-2. **Drivers de Potencia:** Drivers TB6560 para el control de los motores paso a paso.
+2. **Drivers de Potencia:** Drivers TB6600 para el control de los motores paso a paso.
 3. **Configuración de Actuadores (Ejes):**
    - **Eje 1 (Base / Cintura):** Giro horizontal accionado por motor **NEMA 23**.
    - **Eje 2 (Hombro):** Pitch / Inclinación principal accionado por **dos motores NEMA 23** trabajando en conjunto para mayor torque.
@@ -82,7 +82,7 @@ Cuando ya hayas guardado todos los pasos que necesitas, escribe la palabra INICI
    - Debido a la disposición simétrica o de espejo en la que se montan mecánicamente ambos motores en la estructura, **se debe invertir físicamente la conexión de una de las fases (por ejemplo, intercambiando los cables A+ y A-) en los bornes del driver TB6560 de uno de los motores**. De esta manera, al recibir la misma señal de giro, los ejes mecánicos traccionarán de forma simétrica y colaborativa sin forzar ni bloquear la estructura.
 
 ## Tecnologías utilizadas
-- **Hardware:** Arduino Mega 2560, Drivers TB6560, Motores NEMA 23 y NEMA 17.
+- **Hardware:** Arduino Mega 2560, Drivers TB6600, Motores NEMA 23 y NEMA 17.
 - **Software:** Arduino IDE (C/C++).
 - **Librerías:** `AccelStepper`.
 
