@@ -48,6 +48,13 @@ Como se puede apreciar en la ejecución del sistema, la coordinación temporal y
   <small><small>video 1: Intento de calibración y sincronización de ciclos en la celda de trabajo </small></small>
 </div><br>
 
+
+[▶ Ver video de validación dinámica](https://github.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/blob/main/Multimedia/Vid-PruebaOK.mp4)
+
+<div align="center">
+  <small><small>video 2: Calibración y sincronización exitosa de ciclos en la celda de trabajo </small></small>
+</div><br>
+
 ---
 
 ## Esquemático de Conexiones
