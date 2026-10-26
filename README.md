@@ -45,7 +45,7 @@ Como se puede apreciar en la ejecución del sistema, la coordinación temporal y
 [▶ Ver video de validación dinámica](https://raw.githubusercontent.com/amandrini/2026_2C_PPS_PROGRAMACION_FUNCIONAL-CONTROL_MANIPULADOR_ROB-TICO/main/Multimedia/VID-20260824-WA0010.mp4)
 
 <div align="center">
-  <small><small>video 1: Validación dinámica y sincronización de ciclos en la celda de trabajo[cite: 2]</small></small>
+  <small><small>video 1: Intento de calibración y sincronización de ciclos en la celda de trabajo[cite: 2]</small></small>
 </div><br>
 
 ---
