@@ -30,8 +30,8 @@ El sistema de control y potencia está diseñado para gobernar un total de 5 eje
    - **Eje 1 (Base / Cintura):** Giro horizontal accionado por motor **NEMA 23**.
    - **Eje 2 (Hombro):** Inclinación principal accionado por **dos motores NEMA 23** trabajando en conjunto para mayor torque.
    - **Eje 3 (Codo):** Inclinación del segundo tramo accionado por motor **NEMA 17**.
-   - **Eje 4 (Muñeca - Inclinación / Pitch):** Cabeceo del tramo final accionado por motor **NEMA 17**.
-   - **Eje 5 (Muñeca - Rotación / Roll):** Giro axial de la punta accionado por motor **NEMA 17**.
+   - **Eje 4 (Muñeca - Inclinación):** Cabeceo del tramo final accionado por motor **NEMA 17**.
+   - **Eje 5 (Muñeca - Rotación):** Giro axial de la punta accionado por motor **NEMA 17**.
 
 ---
 
